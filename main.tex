@@ -1,0 +1,35 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx} % image handling
+\usepackage{amsmath,amssymb} % math packages
+\usepackage[none]{hyphenat}
+\usepackage{tikz}
+\usepackage{siunitx}
+\usepackage{float}
+\usepackage{tikz}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\renewcommand{\arraystretch}{1.5}
+
+\begin{document} \pagenumbering{gobble}
+
+% cover page
+\begin{center}
+    {\scshape\huge ELEC2216\par} \vspace{0.5cm}
+    {\scshape\Large Advanced Electronic Systems\par} \vspace{2cm}
+    {\scshape Updated: \today}
+\end{center}
+\pagebreak
+
+% contents page
+\tableofcontents \pagebreak
+
+\pagenumbering{arabic}
+
+% include topic files
+\include{powerSupplies1}
+\include{modelingBJTAtDC}
+
+\end{document}
