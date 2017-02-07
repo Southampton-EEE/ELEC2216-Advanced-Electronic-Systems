@@ -173,11 +173,34 @@ Additionally to the table above:
 
 \subsection{Types of Linear Regulator}
 
-\todo{Add diagrams and descriptions of the series and shunt regulator.}
-
 \subsubsection{Series Regulator}
 
+A series regulator is (shock) placed in series with the voltage source. It has three pins, $v_{in}$, $v_{out}$ and \texttt{GND}.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\textwidth]{images/linear-reg.png}
+\caption{Block diagram for a series linear regulator.}
+\end{figure}
+
+Inside the regulator are four main components. 
+
+\begin{itemize}
+    \item $v_{ref}$, a voltage reference, normally a Zener diode.
+    \item An error block, which is physically an op-amp.
+    \item A sample stage, which is just a voltage divider.
+    \item A Control element, physically a transistor.
+\end{itemize}
+
 \subsubsection{Shunt Regulator}
+
+A shunt regulator is similar to a series regulator but is placed in parallel with the load. 
+
+\begin{figure}[H]
+\centering
+\href{http://www.ti.com/product/LM431/datasheet}{\includegraphics[width=0.25\textwidth]{images/shunt-reg.png}}
+\caption{Schematic of TI's LM431 shunt voltage regulator.}
+\end{figure}
 
 \subsection{Heat Flow in Linear Regulators}
 
